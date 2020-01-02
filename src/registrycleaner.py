@@ -18,20 +18,20 @@ parser.add_argument('--username','-u', metavar='registry-user', nargs='+',
 parser.add_argument('--password','-p', metavar='registry-password', nargs='+',
                     help='Registry user password')
 
-parser.add_argument('--get-repos','-get-repos', help='Add this parameter to see all repos',
+parser.add_argument('--get-repos', help='Add this parameter to see all repos',
                     action='store_true')
 
-parser.add_argument('--get-tags','-get-tags', metavar='repo-name', nargs='+',
+parser.add_argument('--get-tags', metavar='repo-name', nargs='+',
                     help='Add this parameter to see all tags of written repo')
 
-parser.add_argument('--yes','-yes', help='Add this parameter to delete tags',
+parser.add_argument('--yes', help='Add this parameter to delete tags',
                     action='store_true')
 
 parser.add_argument('--tag','-t', metavar='taglist', nargs='+',
                     help='Write repo and tags you want to delete, like "repo1:tag1 repo1:tag2 repo2:tag repo3:*".'
                          ' Write "*" instead of tag to delete all tags of repository')
 
-parser.add_argument('--already-login','-already-login', help='Use if you already login your private docker registry.',
+parser.add_argument('--already-login', help='Use if you already login your private docker registry.',
                     action='store_true')
 
 parser.add_argument('--config','-c', metavar='config', nargs='+',
