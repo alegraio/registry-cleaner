@@ -8,7 +8,7 @@ with open("requirements.txt", "r") as r:
 
 setuptools.setup(
     name = "registrycleaner",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Ali YILDIZ",
     author_email = "ali.yildiz@alegradigital.com",
     description = "A pip package for deleting tag in private docker registry",
