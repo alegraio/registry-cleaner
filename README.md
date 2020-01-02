@@ -46,20 +46,23 @@ To delete the listed tag add --yes.
 
 ### Example Usages with pip
 
+Installation:
+> pip3 install registrycleaner
+
 For listing all repos:
-> cleaner --host registry.abc.xyz --username foo --password bar --get-repos
+> registrycleaner --host registry.abc.xyz --username foo --password bar --get-repos
 
 For listing all tags from written repo
-> cleaner --host registry.abc.xyz --username foo --password bar --get-tags repo-name
+> registrycleaner --host registry.abc.xyz --username foo --password bar --get-tags repo-name
 
 List specified repo and tag
-> cleaner --host registry.abc.xyz --username foo --password bar --tag repo1:tag1 repo1:tag2 repo2:tag repo3:*
+> registrycleaner --host registry.abc.xyz --username foo --password bar --tag repo1:tag1 repo1:tag2 repo2:tag repo3:*
 
 If you already login private docker registry and you don't want to enter username or password use --already-login. Default config file at /home/user/.docker/config.json.
-> cleaner --host registry.abc.xyz --get-tags repo-name --already-login
+> registrycleaner --host registry.abc.xyz --get-tags repo-name --already-login
 
 If you want to specify config.json file path, use --config parameter.
-> cleaner --host registry.abc.xyz --get-tags repo-name --already-login --config /home/user/xyz/config.json
+> registrycleaner --host registry.abc.xyz --get-tags repo-name --already-login --config /home/user/xyz/config.json
 
 To delete the listed tag add --yes.
-> cleaner --host registry.abc.xyz --username foo --password bar --tag repo1:tag1 repo1:tag2 repo2:tag --yes
+> registrycleaner --host registry.abc.xyz --username foo --password bar --tag repo1:tag1 repo1:tag2 repo2:tag --yes
